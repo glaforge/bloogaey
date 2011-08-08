@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   sodipodi:docbase="Z:\glaforge sur mon Mac\Desktop"
+   sodipodi:docname="dokspek-logo.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.5192637"
+     inkscape:cx="514.80439"
+     inkscape:cy="349.08707"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="1920"
+     inkscape:window-height="1144"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     width="1052.3622px"
+     height="744.09448px" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:7.32132435px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 679.03951,86.802379 C 637.01188,88.226549 614.43258,93.601039 582.21907,121.26525 C 564.84631,136.18424 543.48418,165.00812 536.60818,199.21424 C 528.75168,238.2986 532.74859,619.53294 532.74859,619.53294 L 465.09486,673.24289 L 492.1554,673.42368 L 532.16322,642.3603 L 532.71288,673.18172 L 645.63357,673.15969 C 645.63357,673.15969 645.38451,605.13031 645.20275,552.94314 C 686.0551,521.12796 703.03124,505.28238 720.69921,500.55198 C 755.31028,491.28525 791.09863,561.35747 718.16544,584.06625 C 750.91793,613.11989 824.6128,673.27986 824.6128,673.27986 L 863.73716,673.39156 C 863.73716,673.39156 789.3048,615.3277 754.85186,585.53237 C 786.50438,573.48041 827.62049,557.66383 825.12245,527.92537 C 819.9123,465.90015 737.47599,474.71492 737.47599,474.71492 C 737.47599,474.71492 776.97819,418.99207 798.72675,376.00578 C 815.18406,343.4777 822.37438,309.52656 826.40878,265.84736 C 829.32711,234.25143 808.13044,171.01709 783.44228,138.49669 C 754.55221,100.44134 729.42633,85.094739 679.03951,86.802379 z M 731.56375,238.31496 C 738.98507,294.54286 737.73034,336.84003 729.58833,381.62107 C 715.62603,458.41384 660.4431,526.94664 645.94924,527.48169 C 644.70041,458.08638 647.7526,332.3109 646.45674,246.884 C 644.7243,84.000399 699.39922,90.278819 731.56375,238.31496 z "
+       id="path3136"
+       sodipodi:nodetypes="csscccccccsccccscsssscsccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:233.56411743px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:89.99999762%;writing-mode:lr-tb;text-anchor:end;fill:#800000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Impact"
+       x="478.94717"
+       y="447.38367"
+       id="text4128"
+       sodipodi:linespacing="89.999998%"
+       transform="scale(1.0868906,0.9200558)"><tspan
+         sodipodi:role="line"
+         x="478.94717"
+         y="447.38367"
+         id="tspan4132"
+         style="font-size:233.56411743px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:89.99999762%;writing-mode:lr-tb;text-anchor:end;fill:#800000;font-family:Impact">DO</tspan><tspan
+         sodipodi:role="line"
+         x="478.94717"
+         y="657.59137"
+         style="font-size:233.56411743px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:89.99999762%;writing-mode:lr-tb;text-anchor:end;fill:#008000;font-family:Impact"
+         id="tspan4142">SPE</tspan></text>
+  </g>
+</svg>
