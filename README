@@ -1,1 +1,3 @@
-This file was created by IntelliJ IDEA (Xena) IU-107.481 for binding GitHub repository
+Bloogaey (pronounced "bloogie") is a small blog engine written in Groovy, using the Gaelyk lightweight toolkit for Google App Engine.
+
+A demo can be seen on Guillaume Laforge's blog: http://glaforge.appspot.com
