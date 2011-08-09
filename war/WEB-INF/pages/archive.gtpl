@@ -17,7 +17,7 @@
 %>
 
 <head>
-    <title>${titlePrefix}Guillaume Laforge -- Groovy Blog</title>
+    <title>${titlePrefix}Guillaume Laforge's Blog</title>
     <% include '/WEB-INF/includes/meta.gtpl' %>
     <meta name="robots" content="noindex,follow" />
 </head>

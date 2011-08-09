@@ -3,7 +3,7 @@
 <% import com.google.appengine.api.blobstore.BlobInfoFactory %>
 
 <head>
-    <title>Media browser -- Guillaume Laforge -- Groovy Blog</title>
+    <title>Administration: Media Browser</title>
 	<% include '/WEB-INF/includes/meta.gtpl' %>
 
     <link rel="stylesheet" type="text/css" href="/css/chosen.css">

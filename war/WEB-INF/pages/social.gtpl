@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Social (twitter, delicious, google reader) -- Guillaume Laforge -- Groovy Blog</title>
+	<title>Social (twitter, delicious, google reader) -- Guillaume Laforge's Blog</title>
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <% include '/WEB-INF/includes/meta.gtpl' %>
 </head>

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Administration -- Guillaume Laforge -- Groovy Blog</title>
+	<title>Administration: Posts</title>
     <% include '/WEB-INF/includes/meta.gtpl' %>
     <script type="text/javascript" src="/js/jquery-1.6.2.min.js"></script>
     <script type="text/javascript" src="/js/jquery.sTabs.min.js"></script>

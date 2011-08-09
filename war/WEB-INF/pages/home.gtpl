@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Guillaume Laforge -- Groovy Blog</title>
+	<title>Guillaume Laforge's Blog</title>
     <% include '/WEB-INF/includes/syntaxHighlighting.gtpl' %>
     <% include '/WEB-INF/includes/meta.gtpl' %>
     <meta name="robots" content="noindex,follow" />

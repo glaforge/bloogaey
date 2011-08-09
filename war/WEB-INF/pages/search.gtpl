@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Search this site -- Guillaume Laforge -- Groovy Blog</title>
+	<title>Search Guillaume Laforge's Blog</title>
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <script type="text/javascript">
         google.load('search', '1', {language : 'en'});

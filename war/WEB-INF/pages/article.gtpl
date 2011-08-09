@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>${request.post.title} -- Guillaume Laforge -- Groovy Blog</title>
+	<title>${request.post.title} -- Guillaume Laforge's Blog</title>
     <% include '/WEB-INF/includes/syntaxHighlighting.gtpl' %>
     <% include '/WEB-INF/includes/meta.gtpl' %>
     <script type="text/javascript">var switchTo5x=true;</script>

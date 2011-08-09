@@ -3,7 +3,7 @@
 
 <head>
 	<% include '/WEB-INF/includes/meta.gtpl' %>
-	<title>Administration -- Guillaume Laforge -- Groovy Blog</title>
+	<title>Administration: Categories</title>
     <script type="text/javascript" src="/js/jquery-1.6.2.min.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {

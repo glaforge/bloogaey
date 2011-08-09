@@ -3,7 +3,7 @@
 <% import com.google.appengine.api.datastore.KeyFactory %>
 
 <head>
-	<title>Administration -- Guillaume Laforge -- Groovy Blog</title>
+	<title>Administration: Edit Posts</title>
     <% include '/WEB-INF/includes/meta.gtpl' %>
 
     <link rel="stylesheet" type="text/css" href="/css/jquery.cleditor.css" />
