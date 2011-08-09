@@ -62,7 +62,7 @@
 						</div>
 
 						<div class="archive-post-title">
-							<h3><a href="/article/${post.urlTitle}">${post.title}</a></h3>
+							<h3><a href="/article/${post.key.name}">${post.title}</a></h3>
 							<div class="post-date">
                                 <% if (post.categories) { %>
                                     Posted in categories

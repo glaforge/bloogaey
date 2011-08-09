@@ -1,6 +1,6 @@
 def title = params.title
 
-def post = datastore.execute { from posts where urlTitle == title }[0]
+def post = datastore.get('posts', title)
 
 if (post) {
     request.post = post

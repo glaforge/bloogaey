@@ -30,7 +30,7 @@
 
 						<div class="post-date">
                             <% if (user && users.isUserLoggedIn() && users.isUserAdmin()) { %>
-                            <form action="/admin/posts/edit/${post.key.id}" method="post">
+                            <form action="/admin/posts/edit/${post.key.name}" method="post">
                                 <input type="image" src="/images/pencil.png" alt="Edit" align="right">
                             </form>
                             <% } %>
@@ -99,7 +99,7 @@
                     <div id="comments">
                         <script>
                             var idcomments_acct = '6315ecb7a0c4effe19c78c6858ab628e';
-                            var idcomments_post_id = '${post.key.id}';
+                            var idcomments_post_id = '${post.key.name}';
                             var idcomments_post_url;
                         </script>
                         <span id="IDCommentsPostTitle" style="display:none"></span>

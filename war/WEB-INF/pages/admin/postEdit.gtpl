@@ -22,8 +22,8 @@
 <% include '/WEB-INF/includes/navigation.gtpl' %>
 
 <%
-    def id = params.id?.toLong()
-    def post = id ? KeyFactory.createKey('posts', id).get() : null
+    def keyName = params.id
+    def post = keyName ? KeyFactory.createKey('posts', keyName).get() : null
 %>
 
 <div id="content-wrapper">
@@ -42,7 +42,7 @@
                             <fieldset>
                                 <form action="/admin/posts/save" method="post">
                                     <% if (post) { %>
-                                    <input type="hidden" name="id" value="${id}">
+                                    <input type="hidden" name="id" value="${keyName}">
                                     <% } %>
                                     <div class="form-row">
                                         <div class="form-property form-required">Title</div>

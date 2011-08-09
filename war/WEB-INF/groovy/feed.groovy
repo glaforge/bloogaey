@@ -22,7 +22,7 @@ html.feed(xmlns: "http://www.w3.org/2005/Atom") {
     subtitle "On all things Groovy!"
     link href: serverRoot, rel: "self"
     updated isoTime.format(new Date())
-    generator(uri: "http://gaelyk.appspot.com", version: "1.0", "Gaelyk lightweight Groovy toolkit for Google App Engine")
+    generator(uri: "http://gaelyk.appspot.com", version: app.gaelyk.version, "Gaelyk lightweight Groovy toolkit for Google App Engine")
 
     posts.each { post ->
         entry {
@@ -32,8 +32,12 @@ html.feed(xmlns: "http://www.w3.org/2005/Atom") {
 
             id post.urlTitle
             title post.title
-            link href: "${serverRoot}/article/${post.urlTitle}"
+            link href: "${serverRoot}/article/${post.key.name}"
+            published isoTime.format(post.created)
             updated isoTime.format(post.created)
+            post.categories.each { cat ->
+                category term: cat, scheme: "$serverRoot/category/${cat}"
+            }
             summary(type: 'html') {
                 mkp.yield content
             }

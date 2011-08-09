@@ -35,11 +35,11 @@
 
 					<div class="post">
 
-						<div class="post-title"><h1><a href="/article/${post.urlTitle}">${post.title}</a></h1></div>
+						<div class="post-title"><h1><a href="/article/${post.key.name}">${post.title}</a></h1></div>
 
 						<div class="post-date">
                             <% if (user && users.isUserLoggedIn() && users.isUserAdmin()) { %>
-                            <form action="/admin/posts/edit/${post.key.id}" method="post">
+                            <form action="/admin/posts/edit/${post.key.name}" method="post">
                                 <input type="image" src="/images/pencil.png" alt="Edit" align="right">
                             </form>
                             <% } %>

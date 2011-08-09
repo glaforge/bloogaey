@@ -2,15 +2,14 @@ import com.google.appengine.api.datastore.Entity
 
 import static bloogy.Utilities.*
 
-def id = params.id?.toLong()
+def keyName = params.id
 
 Entity postOrPage
 
-if (id) {
-    postOrPage = datastore.get('posts', id)
+if (keyName) {
+    postOrPage = datastore.get('posts', keyName)
 } else {
-    postOrPage = new Entity('posts')
-    postOrPage.urlTitle = streamline(params.title)
+    postOrPage = new Entity('posts', streamline(params.title))
 }
 
 postOrPage.title   = params.title
@@ -29,10 +28,10 @@ if (params.categories == null) {
 
 postOrPage.save()
 
-memcache.clearCacheForUri "/${postOrPage.type == 'page' ? 'page' : 'article'}/${postOrPage.urlTitle}"
+memcache.clearCacheForUri "/${postOrPage.type == 'page' ? 'page' : 'article'}/${postOrPage.key.name}"
 memcache.clearCacheForUri '/archives'
 memcache.clearCacheForUri '/'
 
-redirect "/live/${postOrPage.urlTitle}"
+redirect "/live/${postOrPage.key.name}"
 
 

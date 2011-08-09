@@ -29,6 +29,7 @@ get "/admin/media",                     forward: '/admin/adminMedia.groovy'
 get "/admin/media/p@p",                 forward: '/admin/adminMedia.groovy?page=@p'
 get "/admin/mediaSelector",             forward: '/admin/mediaSelector.groovy'
 get "/admin/clearCache",                forward: '/admin/clearCache.groovy'
+get "/admin/export",                    forward: '/admin/export.groovy'
 
 post "/admin/media/add",                forward: '/admin/mediaAdd.groovy'
 post "/admin/media/delete/@bk",         forward: '/admin/mediaDelete.groovy?blobKey=@bk'

@@ -53,10 +53,10 @@
                             <ul class="nice-list">
                                 <% posts.each { post -> %>
                                 <li>
-                                    <form action="/admin/posts/delete/${post.key.id}" method="post">
+                                    <form action="/admin/posts/delete/${post.key.name}" method="post">
                                         <input type="image" src="/images/cross.png" alt="Delete it?" align="right">
                                     </form>
-                                    <form action="/admin/posts/edit/${post.key.id}" method="post">
+                                    <form action="/admin/posts/edit/${post.key.name}" method="post">
                                         <input type="image" src="/images/pencil.png" alt="Edit it" align="right">
                                     </form>
                                 <% if (post.type == 'page') { %>
@@ -64,7 +64,7 @@
                                 <% } else if (post.type == 'post') { %>
                                     <img src="/images/newspaper.png" alt="Post" align="left">&nbsp;
                                 <% } %>
-                                    <strong><a href="/${post.type=='post'?'article':'page'}/${post.urlTitle}">${post.title}</a></strong>
+                                    <strong><a href="/${post.type=='post'?'article':'page'}/${post.key.name}">${post.title}</a></strong>
                                     <br>
                                     <img src="/images/transparent.png" width="20" height="1">
                                     ${post.created.format('yyyy / MM / dd')}

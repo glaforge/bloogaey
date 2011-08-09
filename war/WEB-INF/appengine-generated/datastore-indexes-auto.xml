@@ -1,21 +1,21 @@
-<!-- Indices written at Sun, 7 Aug 2011 20:24:19 UTC -->
+<!-- Indices written at Tue, 9 Aug 2011 13:30:14 UTC -->
 
 <datastore-indexes>
 
-    <!-- Used 15 times in query history -->
+    <!-- Used 61 times in query history -->
     <datastore-index kind="posts" ancestor="false" source="auto">
         <property name="draft" direction="asc"/>
         <property name="type" direction="asc"/>
         <property name="created" direction="desc"/>
     </datastore-index>
 
-    <!-- Used 5 times in query history -->
+    <!-- Used 16 times in query history -->
     <datastore-index kind="posts" ancestor="false" source="auto">
         <property name="draft" direction="asc"/>
         <property name="created" direction="desc"/>
     </datastore-index>
 
-    <!-- Used 11 times in query history -->
+    <!-- Used 9 times in query history -->
     <datastore-index kind="posts" ancestor="false" source="auto">
         <property name="categories" direction="asc"/>
         <property name="draft" direction="asc"/>
