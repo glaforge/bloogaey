@@ -30,7 +30,7 @@ html.feed(xmlns: "http://www.w3.org/2005/Atom") {
             int min = Math.min(post.content.size(), 1000)
             def content = post.content[0..<min] + (min == 1000 ? '...' : '')
 
-            id post.urlTitle
+            id post.key.name
             title post.title
             link href: "${serverRoot}/article/${post.key.name}"
             published isoTime.format(post.created)
