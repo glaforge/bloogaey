@@ -18,11 +18,23 @@ $(document).ready(function() {
     });
 
     $('#titleInput').blur(function(evt) {
-        if ($(this).val().length == 0) {
+        var title = $(this).val();
+        if (title.length == 0) {
             $('#titleInputError').css('display', 'inline-block');
             $('#submitButton').attr('disabled', 'true');
         } else {
-            $('#titleInputError').css('display', 'none');
+            $.ajax({
+                url: '/admin/titleExists',
+                data: {'title': title},
+                success: function(msg) {
+                    if (msg == 'true') {
+                        $('#titleInputError').css('display', 'inline-block');
+                        $('#submitButton').attr('disabled', 'true');
+                    } else {
+                        $('#titleInputError').css('display', 'none');
+                    }
+                }
+            });
             if ($('#createdInput').val().match('\\d{4}/\\d{2}/\\d{2} \\d{2}:\\d{2}')) {
                 $('#submitButton').attr('disabled', false);
             }

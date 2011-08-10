@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<% import com.google.appengine.api.datastore.KeyFactory %>
+<% import com.google.appengine.api.datastore.Key %>
 
 <head>
 	<title>Administration: Edit Posts</title>
@@ -23,7 +23,7 @@
 
 <%
     def keyName = params.id
-    def post = keyName ? KeyFactory.createKey('posts', keyName).get() : null
+    def post = keyName ? datastore.get('posts', keyName) : null
 %>
 
 <div id="content-wrapper">
@@ -49,7 +49,9 @@
                                         <div class="form-value">
                                             <input type="text" name="title" id="titleInput" value="${post ? post.title : ''}"
                                                    class="text" style="width: 96%">
-                                            <div class="error hidden" id="titleInputError">Title must not be empty</div>
+                                            <div class="error hidden" id="titleInputError">
+                                                Title must not be empty or has already been used for another article
+                                            </div>
                                         </div>
 
                                     <div class="clearer">&nbsp;</div>
