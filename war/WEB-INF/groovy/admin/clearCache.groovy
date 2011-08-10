@@ -17,7 +17,7 @@ datastore.execute {
     sort desc by created
     where draft == false
 }.each {
-    memcache.clearCacheForUri "/${it.type == 'post' ? 'article' : 'page'}/${it.urlTitle}"
+    memcache.clearCacheForUri "/${it.type == 'post' ? 'article' : 'page'}/${it.key.name}"
 }
 
 datastore.execute {
