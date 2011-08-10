@@ -98,8 +98,8 @@ $(document).ready(function() {
             event.srcElement.selectionStart = position;
             event.srcElement.selectionEnd = position;
         }
-        // allow left / right arrow to move to a different date field
-        if (event.keyCode != 37 && event.keyCode != 39) {
+        // allow left / right arrow to move to a different date field, as well as tab
+        if (event.keyCode != 37 && event.keyCode != 39 && event.keyCode != 9) {
             event.preventDefault();
         }
     });
