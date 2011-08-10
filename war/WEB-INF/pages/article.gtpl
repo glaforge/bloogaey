@@ -35,6 +35,11 @@
                             </form>
                             <% } %>
                             Posted on ${post.created.format('dd MMMM, yyyy')} (${post.created.pretty()})
+                            <% if (post.modified != null && post.modified != post.created && (post.modified.time - post.created.time > 86400000)) { %>
+                            &mdash;
+                            Modified on ${post.modified?.format('dd MMMM, yyyy')} (${post.modified?.pretty()})
+                            <% } %>
+
                         </div>
 
                         <% if (request.getAttribute('originalURI').contains('article')) { %>

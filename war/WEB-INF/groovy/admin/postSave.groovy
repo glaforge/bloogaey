@@ -8,6 +8,7 @@ Entity postOrPage
 
 if (keyName) {
     postOrPage = datastore.get('posts', keyName)
+    postOrPage.modified = new Date()
 } else {
     postOrPage = new Entity('posts', streamline(params.title))
 }
