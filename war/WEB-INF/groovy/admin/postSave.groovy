@@ -3,6 +3,7 @@ import com.google.appengine.api.datastore.Entity
 import static bloogy.Utilities.*
 
 def keyName = params.id
+def created = Date.parse('yyyy/MM/dd HH:mm', params.created)
 
 Entity postOrPage
 
@@ -11,11 +12,12 @@ if (keyName) {
     postOrPage.modified = new Date()
 } else {
     postOrPage = new Entity('posts', streamline(params.title))
+    postOrPage.modified = created
 }
 
 postOrPage.title   = params.title
 postOrPage.content = params.content
-postOrPage.created = Date.parse('yyyy/MM/dd HH:mm', params.created)
+postOrPage.created = created
 postOrPage.draft   = params.draft == 'draft' ?: false
 postOrPage.type    = params.type
 

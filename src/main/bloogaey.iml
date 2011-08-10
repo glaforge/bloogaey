@@ -54,7 +54,9 @@
           <root url="jar://$MODULE_DIR$/../../war/WEB-INF/lib/groovy-all-1.8.1.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../../groovy/GROOVY_1_8_X/src/main" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
