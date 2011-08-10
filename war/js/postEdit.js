@@ -56,8 +56,8 @@ $(document).ready(function() {
             }
         }
     }).keydown(function(event) {
+        // catch up / down arrows to increase / decrease date field values
         if (event.keyCode == 38 || event.keyCode == 40) {
-            event.preventDefault();
             var direction = event.keyCode == 38 ? 1 : -1;
             var date = new Date(event.srcElement.value);
             var position = event.srcElement.selectionStart;
@@ -97,6 +97,10 @@ $(document).ready(function() {
                     (date.getMinutes() < 10 ? '0' +  date.getMinutes()  :  date.getMinutes());
             event.srcElement.selectionStart = position;
             event.srcElement.selectionEnd = position;
+        }
+        // allow left / right arrow to move to a different date field
+        if (event.keyCode != 37 && event.keyCode != 39) {
+            event.preventDefault();
         }
     });
 
