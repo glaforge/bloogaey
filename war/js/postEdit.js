@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    var isExistingArticle = $('#titleInput').val().length > 0;
+
     $(".chzn-select").chosen();
 
     var editor = $("#content").cleditor({
@@ -23,18 +25,20 @@ $(document).ready(function() {
             $('#titleInputError').css('display', 'inline-block');
             $('#submitButton').attr('disabled', 'true');
         } else {
-            $.ajax({
-                url: '/admin/titleExists',
-                data: {'title': title},
-                success: function(msg) {
-                    if (msg == 'true') {
-                        $('#titleInputError').css('display', 'inline-block');
-                        $('#submitButton').attr('disabled', 'true');
-                    } else {
-                        $('#titleInputError').css('display', 'none');
+            if (!isExistingArticle) {
+                $.ajax({
+                    url: '/admin/titleExists',
+                    data: {'title': title},
+                    success: function(msg) {
+                        if (msg == 'true') {
+                            $('#titleInputError').css('display', 'inline-block');
+                            $('#submitButton').attr('disabled', 'true');
+                        } else {
+                            $('#titleInputError').css('display', 'none');
+                        }
                     }
-                }
-            });
+                });
+            }
             if ($('#createdInput').val().match('\\d{4}/\\d{2}/\\d{2} \\d{2}:\\d{2}')) {
                 $('#submitButton').attr('disabled', false);
             }
