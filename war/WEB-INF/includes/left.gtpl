@@ -32,7 +32,6 @@
                 <% datastore.execute{ from categories sort asc by name }.each { category -> %>
                     <li>
                         <a href="/category/${category.name}" alt="${category.description}">${category.name}</a>
-                        <a href="/feed/atom/${category.name}"><img align="right" src="/images/atom.gif" style="margin-top:2px"></a>
                     </li>
                 <% } %>
                 </ul>

@@ -10,7 +10,7 @@
                 </div>
 
 				<div id="help-wrapper">
-                    <a href="/feed/atom">
+                    <a href="http://feeds.feedburner.com/glaforge">
                         <img src="/images/feed.png" alt="Atom feed" align="left" style="position: relative; top: 12px; left: -10px">
                     </a>
 					<div id="help">

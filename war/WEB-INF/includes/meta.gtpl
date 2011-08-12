@@ -3,7 +3,7 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" />
-    <link rel="alternate" type="application/atom+xml" href="/feed/atom" title="Guillaume Laforge's blog feed"/>
+    <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/glaforge" title="Guillaume Laforge's blog feed"/>
 
     <% if (!request.getAttribute('originalURI').contains('/admin')) { %>
     <script type="text/javascript">
