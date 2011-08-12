@@ -34,8 +34,7 @@ html.feed(xmlns: "http://www.w3.org/2005/Atom") {
             title post.title
             link href: "${serverRoot}/article/${post.key.name}"
             published isoTime.format(post.created)
-            if (post.modified != post.created)
-                updated isoTime.format(post.modified)
+            updated isoTime.format(post.modified)
             post.categories?.each { cat ->
                 category term: cat, scheme: "$serverRoot/category/${cat}"
             }
