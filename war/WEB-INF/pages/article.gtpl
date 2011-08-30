@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/Blog">
 
 <head>
-	<title>${request.post.title} -- Guillaume Laforge's Blog</title>
+    <% def post = request.post %>
+
+	<title>${post.title} -- Guillaume Laforge's Blog</title>
     <% include '/WEB-INF/includes/syntaxHighlighting.gtpl' %>
     <% include '/WEB-INF/includes/meta.gtpl' %>
+
+    <meta itemprop="name" content="${post.title}">
+    <meta itemprop="description" content="${post.content.replaceAll('<[^>]*>', ' ').replaceAll('&[^;]*;', ' ').take(200)}...">
+
     <script type="text/javascript">var switchTo5x=true;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
     <script type="text/javascript">stLight.options({publisher:'4ebd393c-0ce9-4527-a07c-7c97bf04495f'});</script>
 </head>
 
@@ -25,7 +32,6 @@
 
 					<div class="post">
 
-                        <% def post = request.post %>
 						<div class="post-title"><h1>${post.title}</h1></div>
 
 						<div class="post-date">
@@ -79,14 +85,6 @@
                         <!-- Place this tag where you want the +1 button to render -->
                         <g:plusone count="false"></g:plusone>
 
-                        <!-- Place this tag after the last plusone tag -->
-                        <script type="text/javascript">
-                          (function() {
-                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                            po.src = 'https://apis.google.com/js/plusone.js';
-                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                          })();
-                        </script>
                         <span  class='st_twitter_large' ></span>
                         <span  class='st_dzone_large' ></span>
                         <span  class='st_delicious_large' ></span>
