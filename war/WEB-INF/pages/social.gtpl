@@ -31,6 +31,7 @@
                             </p>
                             <ul>
                                 <li>my <a href="http://twitter.com/glaforge">tweets on Twitter</a>,</li>
+                                <li>my <a href="https://plus.google.com/114130972232398734985/posts">public posts on Google+</a>,</li>
                                 <li>my <a href="http://www.google.com/reader/shared/glaforge">shared items in Google Reader</a>,</li>
                                 <li>and my <a href="http://www.delicious.com/glaforge">saved bookmakrs on Delicious</a>.</li>
                             </ul>
