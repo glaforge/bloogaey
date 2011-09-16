@@ -49,6 +49,8 @@
                     <li><a href="http://grails.org">Grails</a> web application framework</li>
                     <li><a href="http://gaelyk.appspot.com">Gaelyk</a> lightweight toolkit for GAE</li>
                     <li><a href="http://www.gradle.org">Gradle</a> project automation</li>
+                    <li><a href="http://gpars.codehaus.org/">GPars</a> concurrency library</li>
+                    <li><a href="http://griffon.codehaus.org/">Griffon</a> desktop app framework</li>
                     <li><a href="http://spockframework.org/">Spock</a> testing framework</li>
                     <li><a href="http://codenarc.sourceforge.net/">CodeNarc</a> static code analysis</li>
                 </ul>
