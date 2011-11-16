@@ -121,9 +121,6 @@
                                 int entityCount = datastore.execute { select count from blobstoreKind }
                                 int pageCount = (entityCount - 1).intdiv(numberPerPage) + 1
 
-                                log.info "entity count = ${entityCount}"
-                                log.info "page count = ${pageCount}"
-
                                 boolean hasPrev = offsetParam > 0
                                 boolean hasNext = page + 1 < pageCount
 
