@@ -2,8 +2,8 @@
 <html>
 
 <head>
-	<% include '/WEB-INF/includes/meta.gtpl' %>
-	<title>Page not found -- Guillaume Laforge's Blog</title>
+    <% include '/WEB-INF/includes/meta.gtpl' %>
+    <title>Page not found -- Guillaume Laforge's Blog</title>
 </head>
 
 <body id="top">
@@ -12,33 +12,33 @@
 <% include '/WEB-INF/includes/navigation.gtpl' %>
 
 <div id="content-wrapper">
-	<div class="center-wrapper">
+    <div class="center-wrapper">
 
-		<div class="content" id="content-two-columns">
+        <div class="content" id="content-two-columns">
 
-			<div id="main-wrapper">
-				<div id="main">
+            <div id="main-wrapper">
+                <div id="main">
 
-					<div class="post">
+                    <div class="post">
 
-						<div class="post-title"><h1>Page not found</h1></div>
+                        <div class="post-title"><h1>Page not found</h1></div>
 
-						<div class="post-body">
+                        <div class="post-body">
                             <p>The page you were looking for couldn't be found.</p>
 
                             <p>Otherwise, please one of the links in the navigation bars
                             to find your way in this website.</p>
-						</div>
+                        </div>
 
-					</div>
+                    </div>
 
-				</div>
-			</div>
+                </div>
+            </div>
 
             <% include '/WEB-INF/includes/left.gtpl' %>
-		</div>
+        </div>
 
-	</div>
+    </div>
 </div>
 
 <% include '/WEB-INF/includes/footer.gtpl' %>

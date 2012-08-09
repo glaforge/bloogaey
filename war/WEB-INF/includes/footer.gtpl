@@ -1,11 +1,11 @@
 <div id="footer-wrapper">
 
-	<div class="center-wrapper">
+    <div class="center-wrapper">
 
-		<div id="footer">
+        <div id="footer">
 
-			<div class="left">
-				<a href="/">Home</a>
+            <div class="left">
+                <a href="/">Home</a>
                 <span class="text-separator">|</span>
                 <a href="/archives">Archives</a>
                 <span class="text-separator">|</span>
@@ -16,16 +16,16 @@
                 <a href="/page/contact-me">Contact me</a>
                 <span class="text-separator">|</span>
                 <a href="/page/about-this-site">About this site</a>
-			</div>
+            </div>
 
-			<div class="right">
-				<a href="#">Top ^</a>
-			</div>
+            <div class="right">
+                <a href="#">Top ^</a>
+            </div>
 
-			<div class="clearer">&nbsp;</div>
+            <div class="clearer">&nbsp;</div>
 
-		</div>
+        </div>
 
-	</div>
+    </div>
 
 </div>

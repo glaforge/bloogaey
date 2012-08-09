@@ -27,6 +27,10 @@
             <!-- Output generation time in the HTML, see source page -->
             <param-value>false</param-value>
         </init-param>
+        <init-param>
+            <param-name>preferPrecompiled</param-name>
+            <param-value>false</param-value>
+        </init-param>
         <!-- usefule for warmup requests -->
         <load-on-startup>1</load-on-startup>
     </servlet>

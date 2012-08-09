@@ -1,8 +1,5 @@
-
-def title = bloogy.Utilities.streamline(params.title)
-
 try {
-    datastore.get('posts', title)
+    datastore.get('posts', params.title.streamline())
     out << 'true'
 } catch (any) {
     out << 'false'

@@ -18,7 +18,7 @@ get "/media/@file.@ext",                forward: '/media.groovy?fileName=@file.@
 get "/feed/atom/@cat",                  forward: '/feed.groovy?category=@cat',                                              cache: cache
 get "/feed/atom",                       forward: '/feed.groovy',                                                            cache: cache
 
-get "/social",                          forward: '/social.groovy',                                                          cache: cache
+get "/social",                          redirect301: '/'
 
 get "/search",                          forward: '/search.groovy',                                                          cache: 24.hours
 

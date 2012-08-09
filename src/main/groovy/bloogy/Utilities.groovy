@@ -1,5 +1,6 @@
 package bloogy
 
+import com.ocpsoft.pretty.time.PrettyTime
 import java.text.Normalizer
 
 class Utilities {
@@ -14,6 +15,10 @@ class Utilities {
             .replaceAll(/\W+/, '-')
             .replaceAll(/(-+$|^-+)/, '')
             .toLowerCase()
+    }
+
+    static String pretty(Date date) {
+        new PrettyTime().format(date)
     }
 }
 

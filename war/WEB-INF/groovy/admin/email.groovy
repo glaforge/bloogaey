@@ -3,8 +3,6 @@ import javax.mail.internet.MimeMultipart
 import javax.mail.BodyPart
 import javax.mail.internet.MimeMessage
 
-import static bloogy.Utilities.*
-
 def content = request.inputStream.text
 new Entity('email').with {
     rawContent = content
@@ -40,7 +38,7 @@ log.info "ALL: ${sb.toString()}"
 
 new Entity('posts').with {
     title = msg.subject
-    urlTitle = streamline(msg.subject)
+    urlTitle = msg.subject.streamline()
     created = new Date()
     categories = []
     draft = false
