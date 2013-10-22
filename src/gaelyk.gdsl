@@ -35,7 +35,6 @@ contributor([all, jabber, mail, routes]) {
     property name: "user",          type: "com.google.appengine.api.users.User"
     property name: "xmpp",          type: "com.google.appengine.api.xmpp.XMPPService"
     property name: "blobstore",     type: "com.google.appengine.api.blobstore.BlobstoreService"
-    property name: "files",         type: "com.google.appengine.api.files.FileService"
     property name: "oauth",         type: "com.google.appengine.api.oauth.OAuthService"
 
     property name: "localMode",     type: "java.lang.Boolean"

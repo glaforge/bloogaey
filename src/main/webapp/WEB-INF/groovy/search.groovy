@@ -1,0 +1,1 @@
+forward '/WEB-INF/pages/search.gtpl'

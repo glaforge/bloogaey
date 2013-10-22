@@ -1,4 +1,0 @@
-Sitemap: http://glaforge.appspot.com/sitemap.xml
-User-agent: *
-Disallow: /admin
-Disallow: /live
