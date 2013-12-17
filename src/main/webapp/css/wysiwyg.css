@@ -1,0 +1,9 @@
+@import '/css/style.css';
+
+body {
+    background-color: white;
+}
+
+blockquote {
+    width: 70%;
+}
